@@ -91,9 +91,9 @@ Figure 4: Grad‑CAM visualizations highlighting regions influencing model predi
 ### Conclusions
 
 * Strengths: Stable training, no overfitting, decent overall accuracy.
-* Weaknesses: Extremely poor COVID‑19 recall — fails to identify positives reliably.
+* Weaknesses: Extremely poor COVID‑19 recall fails to identify positives reliably.
 * Main Cause: Severe class imbalance + small dataset size.
-* Implication: In real medical contexts, missing COVID‑19 cases can be dangerous — recall must be prioritized.
+* Implication: In real medical contexts, missing COVID‑19 cases can be dangerous recall must be prioritized.
 
 
 ### Future Work
