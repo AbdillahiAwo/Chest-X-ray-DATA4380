@@ -72,13 +72,18 @@ Figure 3: Training vs validation accuracy and loss.
 * Confusion Matrix:
 
 <img width="528" height="479" alt="download-3" src="https://github.com/user-attachments/assets/e617879c-314b-431a-a8bd-e63540465f07" />
+
 * Classification Report:
 
 <img width="530" height="126" alt="Screenshot 2025-08-06 at 12 50 27 AM" src="https://github.com/user-attachments/assets/b2ec987a-819b-4719-8855-92ba33f5fd2d" />
+
 * Grad‑CAM Heatmaps:
 
 <img width="639" height="324" alt="download-2" src="https://github.com/user-attachments/assets/96eb83da-67c6-4d62-9d72-92b5e711eb7c" />
+
 Figure 4: Grad‑CAM visualizations highlighting regions influencing model predictions.
+
+
 ### Conclusions
 
 * EfficientNetB0 provided the best performance overall.
