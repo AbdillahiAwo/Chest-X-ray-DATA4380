@@ -1,6 +1,6 @@
 # COVID-19 Chest X-ray Classification
 
-* This repository contains a computer vision project that applies transfer learning (MobileNetV2 and EfficientNetB0) to classify chest X‑ray images as COVID‑19 or Non‑COVID, using the COVID‑19 Chest X‑ray 
+This project aims to classify chest X-ray images as either COVID-19 positive or Non-COVID using transfer learning with pre-trained CNNs. The dataset contains X-ray images. Models used include MobileNetV2 and EfficientNetB0. My best model EfficientNetB0 achieved 80% test accuracy, though struggled with COVID-19 sensitivity.
 
 ## Overview
 
@@ -16,9 +16,12 @@ Our final EfficientNetB0 model achieved 80% test accuracy despite significant cl
 ### Data
 
 * Data:
-  * Type: Chest X‑ray images (JPEG format) with metadata (CSV file).
+  * Type: CGrayscale/monochrome chest X-ray images (resized to 224×224).
   * Size: 372 images in total (328 usable after cleaning).
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation.
+  * Instances (after preprocessing):
+    * Train: 249 images
+    * Validation: 52 images
+    * Test: 50 images
   * Class Distribution:
     * COVID‑19: 265 images
     * Non‑COVID: 63 images
@@ -41,18 +44,19 @@ Figure 2: Preprocessed chest X‑ray images after resizing, normalization, and a
 
 ### Problem Formulation
 
-* Input: RGB chest X‑ray image (224×224×3).
-* Output: Binary class label (1 = COVID‑19, 0 = Non‑COVID).
-* Loss: Binary Crossentropy.
-* Optimizer: Adam.
+* Input: 224×224 chest X-ray image.
+* Output: Binary label (1 = COVID‑19, 0 = Non-COVID).
+* Task: Binary image classification.
 * Metrics: Accuracy, Precision, Recall, F1‑score.
 
 ### Models Tried
 
 1. MobileNetV2
    * Used as baseline transfer learning model.
-   * Performance plateaued at ~79% accuracy.
+   * Base model frozen, custom dense layers added.
+   * Performance plateaued at 79% accuracy.
 2. EfficientNetB0
+   * Similar transfer learning setup.
    * Better generalization.
    * Final test accuracy: 80%
   
@@ -86,9 +90,11 @@ Figure 4: Grad‑CAM visualizations highlighting regions influencing model predi
 
 ### Conclusions
 
-* EfficientNetB0 provided the best performance overall.
-* Class imbalance severely impacted COVID‑19 recall.
-* Validation accuracy plateaued early, suggesting potential dataset size limitations.
+* Strengths: Stable training, no overfitting, decent overall accuracy.
+* Weaknesses: Extremely poor COVID‑19 recall — fails to identify positives reliably.
+* Main Cause: Severe class imbalance + small dataset size.
+* Implication: In real medical contexts, missing COVID‑19 cases can be dangerous — recall must be prioritized.
+
 
 ### Future Work
 
