@@ -133,10 +133,7 @@ Figure 4: Grad‑CAM visualizations highlighting regions influencing model predi
 
 ### Overview of files in repository
 
-* data_preprocessing.ipynb – Cleans and preprocesses dataset.
-* train_mobilenetv2.ipynb – MobileNetV2 baseline training.
-* train_efficientnetb0.ipynb – EfficientNetB0 final training and evaluation.
-* utils.py – Helper functions for preprocessing and visualization.
+* Final_vision.ipynb
 
 ### Software Setup
 * Python 3.10+
