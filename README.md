@@ -99,7 +99,15 @@ This report shows that while the model correctly identified all Non-COVID cases,
 
 Figure 4: Grad‑CAM visualizations highlighting regions influencing model predictions.
 
-
+1. Left (Original X-ray):
+   * Standard chest X-ray.
+   * Arrows point to regions of interest (likely abnormalities).
+    
+2. Right (Grad-CAM):
+   * Heatmap overlay shows where the AI model focused.
+   * Warm colors (yellow/red) = high importance.
+   * Model focuses on the central chest area.
+   
 ### Conclusions
 
 * Strengths: Stable training, no overfitting, decent overall accuracy.
