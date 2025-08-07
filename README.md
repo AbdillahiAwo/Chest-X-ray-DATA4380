@@ -70,7 +70,12 @@ Figure 2: Preprocessed chest X‑ray images after resizing, normalization, and a
 Training & Validation Curves (EfficientNetB0 Final Run):
 <img width="1183" height="484" alt="download-4" src="https://github.com/user-attachments/assets/8d817490-bfc9-463a-b4ce-f143fbbb8b98" />
 Figure 3: Training vs validation accuracy and loss.
-
+1. Left Graph (Accuracy over Epochs):
+   * The training accuracy quickly increases and then remains constant around 82%.
+   * The validation accuracy starts high 83% and stays stable, showing no overfitting
+2. Right Graph (Loss over Epochs):
+   * Training loss drops sharply at first, then levels off with minor fluctuations.
+   * Validation loss steadily decreases and stabilizes, indicating good generalization.
 ### Performance Evaluation
 
 * Confusion Matrix:
