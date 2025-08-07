@@ -88,6 +88,8 @@ Figure 3: Training vs validation accuracy and loss.
 
 <img width="530" height="126" alt="Screenshot 2025-08-06 at 12 50 27 AM" src="https://github.com/user-attachments/assets/b2ec987a-819b-4719-8855-92ba33f5fd2d" />
 
+This report shows that while the model correctly identified all Non-COVID cases, it failed to detect any COVID-19 cases, indicating poor performance on the minority class despite a high overall accuracy.
+
 * Grad‑CAM Heatmaps:
 
 <img width="639" height="324" alt="download-2" src="https://github.com/user-attachments/assets/96eb83da-67c6-4d62-9d72-92b5e711eb7c" />
