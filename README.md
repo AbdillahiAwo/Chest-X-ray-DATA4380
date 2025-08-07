@@ -108,6 +108,8 @@ Figure 4: Grad‑CAM visualizations highlighting regions influencing model predi
    * Warm colors (yellow/red) = high importance.
    * Model focuses on the central chest area.
    
+ This is what the AI model used to predict COVID diagnosis
+   
 ### Conclusions
 
 * Strengths: Stable training, no overfitting, decent overall accuracy.
