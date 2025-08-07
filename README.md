@@ -9,7 +9,7 @@ This project aims to classify chest X-ray images as either COVID-19 positive or 
   * Non‑COVID
  
 The approach uses transfer learning with pre‑trained CNNs (MobileNetV2, EfficientNetB0), fine‑tuning, and class weighting to address dataset imbalance.
-Our final EfficientNetB0 model achieved 80% test accuracy despite significant class imbalance.
+My final EfficientNetB0 model achieved 80% test accuracy despite significant class imbalance.
 
 ## Summary of Workdone
 
