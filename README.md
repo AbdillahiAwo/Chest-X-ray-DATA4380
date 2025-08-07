@@ -7,6 +7,7 @@ This project aims to classify chest X-ray images as either COVID-19 positive or 
 * The task is to detect COVID‑19 from chest X‑ray images using deep learning. I frame this as a binary image classification problem with two classes:
   * COVID‑19
   * Non‑COVID
+ 
 The approach uses transfer learning with pre‑trained CNNs (MobileNetV2, EfficientNetB0), fine‑tuning, and class weighting to address dataset imbalance.
 Our final EfficientNetB0 model achieved 80% test accuracy despite significant class imbalance.
 
