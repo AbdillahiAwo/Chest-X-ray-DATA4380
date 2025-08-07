@@ -84,6 +84,9 @@ Figure 3: Training vs validation accuracy and loss.
 
 <img width="528" height="479" alt="download-3" src="https://github.com/user-attachments/assets/e617879c-314b-431a-a8bd-e63540465f07" />
 
+The confusion matrix shows the model correctly identified all 40 COVID cases but failed to recognize any of the 10 Non-COVID cases, misclassifying them all as COVID.
+
+
 * Classification Report:
 
 <img width="530" height="126" alt="Screenshot 2025-08-06 at 12 50 27 AM" src="https://github.com/user-attachments/assets/b2ec987a-819b-4719-8855-92ba33f5fd2d" />
